@@ -6,7 +6,6 @@ import pickle
 # используя модуль Pickle и файловую систему.
 # Узнать про + и - модуля Pickle.
 
-# https://digitology.tech/docs/python_3/library/pickle.html
 
 def main():
     mary = Employee("Mary", 30)
