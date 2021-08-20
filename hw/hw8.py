@@ -25,18 +25,28 @@
 # Bye!
 
 def main():
-    try:
-        data = int(input())
-        if data == "exit":
-            exit(0)
+    global data
+    data = input()
+    if data in ['exit', '']:
+        exit(0)
+    is_number(data)
+    main()
+
+
+def is_number(num):
+    if num == '':
         print(convert(data))
-        main()
-    except ValueError:
+        return
+    digit = num[0]
+    if digit in ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']:
+        is_number(num[1:])
+    else:
         print("Не удалось преобразовать введенный текст в число.")
         exit(0)
 
 
 def convert(number):
+    number = int(number)
     if number % 2 == 1:
         return number * 3 + 1
     else:

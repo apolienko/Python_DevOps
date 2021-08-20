@@ -1,5 +1,6 @@
 import re
 
+
 # Встроенная функция input позволяет ожидать и возвращать данные из стандартного
 # ввода ввиде строк (весь введенный пользователем текст до нажатия им enter).
 # Используя данную функцию, напишите программу, которая:
@@ -17,4 +18,9 @@ import re
 # -> 123dfgdr%0&45ty-45--900
 # -777
 
-print(sum(list(map(int, re.findall('-?[0-9]+', input("Enter some words\n"))))))
+def main():
+    print(sum(list(map(int, re.findall('-?[0-9]+', input("Enter some words\n"))))))
+
+
+if __name__ == "__main__":
+    main()

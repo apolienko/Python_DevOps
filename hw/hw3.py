@@ -19,18 +19,23 @@
 # 2 - собака
 # 2 - кот
 
-wordsList = list(input("Enter some words\n").split())
-counter = {}
+def main():
+    wordsList = list(input("Enter some words\n").split())
+    counter = {}
 
-for word in wordsList:
-    word = word.lower()
-    counter[word] = counter.get(word, 0) + 1
+    for word in wordsList:
+        word = word.lower()
+        counter[word] = counter.get(word, 0) + 1
 
-sorted(counter)
-mostFrequentWord = list(counter.values())[0]
+    sorted(counter)
+    mostFrequentWord = list(counter.values())[0]
 
-for word in counter:
-    if counter[word] == mostFrequentWord:
-        print("%d - %s" % (counter[word], word))
-    else:
-        break
+    for word in counter:
+        if counter[word] == mostFrequentWord:
+            print("%d - %s" % (counter[word], word))
+        else:
+            break
+
+
+if __name__ == "__main__":
+    main()

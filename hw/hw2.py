@@ -13,7 +13,12 @@
 # -> asdfdsf324 ?3 efref4r4 23r(*&^*& efref4r4 a a bb ?3
 # asdfdsf324 ?3 efref4r4 23r(*&^*& a bb
 
-wordsList = list(dict.fromkeys(input("Enter some words\n").split()))
+def main():
+    wordsList = list(dict.fromkeys(input("Enter some words\n").split()))
 
-for word in wordsList:
-    print(word, end=" ")
+    for word in wordsList:
+        print(word, end=" ")
+
+
+if __name__ == "__main__":
+    main()
