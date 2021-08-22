@@ -7,5 +7,15 @@
 # problem48 - list comprehension : one line
 # problem40 - list comprehension
 
-#print([a for a in range(1, 1000) for b in range(a+1, 1000) for c in range(b+1, 1000) if (a**2 + b**2 == c**2)])
+# # problem9
+print(
+    [(a, b, c) for a in range(1000) for b in range(a) for c in range(b) if a * a == b * b + c * c if a + b + c == 1000])
+
+# problem6
+print(sum([a for a in range(100)])**2 - sum([a*a for a in range(100)]))
+
+# problem48
+print(str(sum([a ** a for a in range(1001)]))[-10:])
+
+# problem40
 
