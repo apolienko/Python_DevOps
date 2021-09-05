@@ -20,8 +20,8 @@ def main():
     last_element_index = len(digits) - 1
 
     for x in range(1, len(digits)):
-        if digits[x] - digits[x - 1] > 1:
-            print(digits[x - 1] + 1)
+        if x != digits[x - 1]:
+            print(x)
             break
         if x == last_element_index:
             print(digits[last_element_index] + 1)
