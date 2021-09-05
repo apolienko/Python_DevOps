@@ -9,7 +9,7 @@ import pickle
 
 def main():
     mary = Employee("Mary", 30)
-    with open("temp_for_employees.txt", "wb") as file:
+    with open("temp_for_employees.bin", "wb") as file:
         pickle.dump(mary, file)
 
 
