@@ -14,7 +14,7 @@ def main():
     final_sum = 0
 
     for x in range(1000000):
-        x_bin = to_bin(x)
+        x_bin = int(bin(x), 2)
         if is_palindrome(x) & is_palindrome(x_bin):
             final_sum += x
 
@@ -28,16 +28,6 @@ def is_palindrome(digit):
         return True
     else:
         return False
-
-
-def to_bin(a):
-    b = ''
-
-    while a > 0:
-        b = str(a % 2) + b
-        a = a // 2
-
-    return b
 
 
 if __name__ == '__main__':

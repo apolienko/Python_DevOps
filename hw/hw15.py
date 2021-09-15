@@ -34,8 +34,11 @@ class Router:
     ip_route_table = {}
 
     def add_ip_interface(self, addr, interface):
-        self.interfaces[addr] = interface
-        self.ip_route_table[ip_address(addr[:-3])] = ip_network(addr, False)
+        try:
+            self.interfaces[addr] = interface
+            self.ip_route_table[ip_address(addr[:-3])] = ip_network(addr, False)
+        except ValueError:
+            print("Ip-address is not added. Try to use mask")
 
     def del_ip_interface(self, interface):
         self.interfaces.pop(interface)
