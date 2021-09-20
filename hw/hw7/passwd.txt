@@ -47,9 +47,9 @@ systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
 ftp-admin:x:1001:1001:FTP,,,:/home/ftp-admin:/bin/bash
 ftp-admin2:x:1002:1002:,,,:/home/ftp-admin2:/bin/bash
 example:x:1003:1003::/home/example:/bin/bash
-biglou:x:1006:1006:f,f,f,f,f:/home/biglou:/bin/bash
-lilbroke:x:1007:1007:,,,:/home/lilbroke:/bin/bash
-bigboiii:x:1008:1008:,,,:/home/bigboiii:/bin/bash
 last:x:1009:1009:,,,:/home/last:/bin/bash
 last2:x:1010:1010:,,,:/home/last2:/bin/bash
 last3:x:1011:1011:,,,:/home/last3:/bin/bash
+last31:x:1111:1011:,,,:/home/last3:/bin/bash
+last32:x:1211:1011:,,,:/home/last3:/bin/bash
+last33:x:1311:1011:,,,:/home/last3:/bin/bash
